@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "218739114964",
+    "project_id": "test-dd2e4",
+    "storage_bucket": "test-dd2e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218739114964:android:e992835b029d067b3d0c41",
+        "android_client_info": {
+          "package_name": "com.example.cle_imitation_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7k3zA9AsYX0Hj7sO9M0JqLDXUp-Acsio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
