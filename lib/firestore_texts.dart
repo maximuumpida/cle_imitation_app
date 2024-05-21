@@ -3,12 +3,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 class FirestoreTexts extends StatelessWidget {
   const FirestoreTexts({super.key});
-
-  void deleteDoc() async {
-    FirebaseFirestore.instance
-        .collection('tani')
-        .doc('8knF62NaXCeXNXTLXkWx')
-        .delete();
+  void createDoc() async {
+    FirebaseFirestore.instance.collection('tani').add({'body': '新規作成データです。'});
   }
 
   @override
@@ -16,11 +12,11 @@ class FirestoreTexts extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('タイトル')),
       body: Center(
-        child: GestureDetector(
+      child: GestureDetector(
             onTap: () {
-              deleteDoc();
+              createDoc();
             },
-            child: const Text('タップで削除')),
+            child: const Text('タップで新規作成')),
       ),
     );
   }
