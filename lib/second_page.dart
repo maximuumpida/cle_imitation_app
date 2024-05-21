@@ -1,4 +1,4 @@
-import 'package:cle_imitation_app/Third_page.dart';
+import 'package:cle_imitation_app/third_page.dart';
 import 'package:flutter/material.dart';
 
 class SecondPage extends StatelessWidget {
