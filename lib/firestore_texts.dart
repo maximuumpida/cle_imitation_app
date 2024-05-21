@@ -4,25 +4,24 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 class FirestoreTexts extends StatelessWidget {
   const FirestoreTexts({super.key});
 
-  void updateDoc() async {
+  void deleteDoc() async {
     FirebaseFirestore.instance
         .collection('tani')
         .doc('8knF62NaXCeXNXTLXkWx')
-        .update({'body': 'テキストを更新しました。'});
+        .delete();
   }
 
- @override
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('タイトル')),
       body: Center(
-           child: GestureDetector(
+        child: GestureDetector(
             onTap: () {
-              updateDoc();
+              deleteDoc();
             },
-            child: const Text('タップで更新')),
+            child: const Text('タップで削除')),
       ),
     );
-            }
-          }
-        
+  }
+}
